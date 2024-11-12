@@ -7,14 +7,42 @@ body {
     padding: 0;
 }
 
+/* Barra de Navegação */
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.5rem 1rem; /* Menu superior mais fino */
     background-color: #2c4f7c;
     color: #fff;
 }
 
+.navbar h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .login-icon {
+    width: 32px; /* Ajuste o tamanho conforme necessário */
+    height: 32px;
+    border-radius: 50%; /* Deixe a imagem circular, se necessário */
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.navbar a#login-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem;    
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar a#login-icon:hover {
+    color: #00c875;
+}
+
+/* Container Geral */
 .container {
     max-width: 1200px;
     margin: auto;
@@ -26,6 +54,7 @@ h2 {
     color: #2c4f7c;
     text-align: center;
     margin-top: 1rem;
+    font-weight: bold;
 }
 
 .intro, .experiment-now-section {
@@ -36,7 +65,8 @@ h2 {
 .pricing-cards {
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 .pricing-card {
@@ -46,6 +76,11 @@ h2 {
     text-align: center;
     padding: 1.5rem;
     width: 30%;
+    transition: transform 0.2s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
 }
 
 .price {
@@ -61,8 +96,14 @@ h2 {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
+.btn-select:hover {
+    background-color: #009e59;
+}
+
+/* Seção de Experimentação */
 .experiment-now-section {
     margin-top: 2rem;
     background-color: #ffffff;
@@ -91,6 +132,11 @@ h2 {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #009e59;
 }
 
 /* Estilo do Rodapé */
@@ -156,6 +202,7 @@ h2 {
 .modal-content h2 {
     color: #2c4f7c;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .modal-content form label {
@@ -182,6 +229,7 @@ h2 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .modal-content form button:hover {
