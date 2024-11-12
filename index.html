@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZapConnect</title>
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Script JavaScript -->
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>ZapConnect</h1>
+        <button id="loginBtn">Login</button>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Seção de Apresentação -->
+        <section class="intro">
+            <h2>ZapConnect - Conecte seu WhatsApp ao Google Agenda e Simplifique sua Gestão de Compromissos!</h2>
+            <p>Bem-vindo ao ZapConnect, o sistema que facilita a integração entre o WhatsApp e o Google Agenda...</p>
+        </section>
+
+        <!-- Como Funciona -->
+        <section class="feature-section">
+            <h2>Como o ZapConnect Funciona?</h2>
+            <ul class="feature-list">
+                <li>Agendamento Automático: Seus clientes podem agendar compromissos...</li>
+                <li>Lembretes Automatizados: Envie lembretes para seus clientes antes dos compromissos...</li>
+                <li>Confirmações de Agendamento: Confirme ou cancele compromissos com apenas alguns toques...</li>
+                <li>Notificações em Tempo Real: Receba notificações instantâneas sempre que um novo agendamento...</li>
+            </ul>
+        </section>
+
+        <!-- Vantagens -->
+        <section class="benefits-section">
+            <h2>Vantagens do ZapConnect</h2>
+            <ul class="benefits-list">
+                <li>Economia de Tempo: Reduza o tempo gasto com confirmações manuais...</li>
+                <li>Organização e Praticidade: Centralize a gestão de compromissos...</li>
+                <li>Experiência do Cliente: Ofereça uma experiência ágil e moderna aos seus clientes...</li>
+            </ul>
+        </section>
+
+        <!-- Planos e Preços -->
+        <section class="pricing">
+            <h2>Planos e Preços</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Plano Básico</h3>
+                    <p class="price">R$157,90/mês</p>
+                    <p>Acesso aos recursos básicos</p>
+                    <button class="btn-select">Selecionar</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Plano Premium</h3>
+                    <p class="price">R$257,90/mês</p>
+                    <p>Acesso a todos os recursos</p>
+                    <button class="btn-select">Selecionar</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Plano Empresarial</h3>
+                    <p class="price">R$327,90/mês</p>
+                    <p>Todos os recursos avançados</p>
+                    <button class="btn-select">Selecionar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experimente Agora com Formulário -->
+        <section class="experiment-now-section">
+            <h2>Experimente Agora!</h2>
+            <p>Dê um passo à frente na gestão de compromissos com o ZapConnect!</p>
+            <form class="contract-form">
+                <label for="planSelect">Escolha o Plano:</label>
+                <select id="planSelect">
+                    <option>Plano Básico - R$157,90/mês</option>
+                    <option>Plano Premium - R$257,90/mês</option>
+                    <option>Plano Empresarial - R$327,90/mês</option>
+                </select>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit" class="btn-submit">Contratar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
