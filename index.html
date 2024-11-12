@@ -13,7 +13,7 @@
     <!-- Navbar -->
     <header class="navbar">
         <h1>ZapConnect</h1>
-        <button id="loginBtn">Login</button>
+        <button class="btn-login" onclick="openModal()">Login</button>
     </header>
 
     <!-- Conteúdo Principal -->
@@ -89,5 +89,28 @@
             </form>
         </section>
     </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 ZapConnect. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
+    </footer>
+
+        <!-- Modal de Login -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
 </body>
 </html>
