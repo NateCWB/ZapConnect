@@ -9,14 +9,13 @@
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM47q37XyjkEmJzmW1VAsE17f0Bo/YRjV9cw6Fe" crossorigin="anonymous">
     <!-- Script JavaScript -->
-    <script src="assets/js/script.js" defer></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function() {
-            emailjs.init("service_2ds4ke9");
+            // Inicializa o EmailJS com o seu User ID
+            emailjs.init("service_2ds4ke9"); // Substitua "YOUR_USER_ID" pelo seu ID de usuário
         })();
     </script>
-
 </head>
 <body>
     
@@ -91,11 +90,11 @@
         <p>Dê um passo à frente na gestão de compromissos com o ZapConnect!</p>
         <form class="contract-form" onsubmit="sendEmail(event)">
             <label for="planSelect">Escolha o Plano:</label>
-            <select id="planSelect" required>
+            <select id="planSelect" name="plan" required>
                 <option value="">Selecione um plano</option>
-                <option value="basic">Plano Básico - R$157,90/mês</option>
-                <option value="premium">Plano Premium - R$257,90/mês</option>
-                <option value="enterprise">Plano Empresarial - R$327,90/mês</option>
+                <option value="Plano Básico - R$157,90/mês">Plano Básico - R$157,90/mês</option>
+                <option value="Plano Premium - R$257,90/mês">Plano Premium - R$257,90/mês</option>
+                <option value="Plano Empresarial - R$327,90/mês">Plano Empresarial - R$327,90/mês</option>
             </select>
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
@@ -129,24 +128,6 @@
     </div>
 </div>
 
-<script>
-    // Abre o modal de login
-    function openModal() {
-        document.getElementById('loginModal').style.display = 'block';
-    }
-
-    // Fecha o modal de login
-    function closeModal() {
-        document.getElementById('loginModal').style.display = 'none';
-    }
-
-    // Fecha o modal ao clicar fora do conteúdo
-    window.onclick = function(event) {
-        if (event.target === document.getElementById('loginModal')) {
-            closeModal();
-        }
-    }
-</script>
-
+<script src="assets/js/script.js"></script>
 </body>
 </html>
