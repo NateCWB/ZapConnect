@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM47q37XyjkEmJzmW1VAsE17f0Bo/YRjV9cw6Fe" crossorigin="anonymous">
     <!-- Script JavaScript -->
     <script src="assets/js/script.js" defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("service_2ds4ke9");
+        })();
+    </script>
+
 </head>
 <body>
     
@@ -85,7 +92,7 @@
     <section class="experiment-now-section">
         <h2>Experimente Agora!</h2>
         <p>Dê um passo à frente na gestão de compromissos com o ZapConnect!</p>
-        <form class="contract-form">
+        <form class="contract-form" onsubmit="sendEmail(event)">
             <label for="planSelect">Escolha o Plano:</label>
             <select id="planSelect" required>
                 <option value="">Selecione um plano</option>
